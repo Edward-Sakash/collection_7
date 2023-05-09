@@ -48,4 +48,17 @@ print(result)
 
 print("______________________________________________")
 
+# Solution 3
+# Define the two dictionaries
+dict1 = {'a': 4, 'b': 16, 'c': 3}
+dict2 = {'a': 8, 'b': 2, 'c': 3}
+
+# Use a list comprehension to get the products of corresponding values
+products = [dict1[key] * dict2[key] for key in dict1]
+
+# Sum up the products using the built-in sum function
+result = sum(products)
+
+# Print the final result
+print(result)
 
